@@ -1975,7 +1975,7 @@ h6 {
 
 .gh {
   --tw-bg-opacity: 1;
-  background-color: rgb(78 107 255 / var(--tw-bg-opacity));
+  background: linear-gradient(135deg, #00C8F0, #1490DC, #3C64C8, #8C2CB4, #D42CA0);
 }
 
 .hh\/20 {
@@ -2058,7 +2058,7 @@ h6 {
 }
 
 .wh {
-  fill: #4E6BFF;
+  fill: #3C64C8;
 }
 
 .xh {
@@ -2382,7 +2382,11 @@ h6 {
 
 .mk {
   --tw-text-opacity: 1;
-  color: rgb(78 107 255 / var(--tw-text-opacity));
+  background: linear-gradient(135deg, #00C8F0, #1490DC, #3C64C8, #8C2CB4, #D42CA0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #3C64C8;
+  /* Fallback */
 }
 
 .nk {
@@ -2550,11 +2554,11 @@ h6 {
 
 .rl:hover {
   --tw-border-opacity: 1;
-  border-color: rgb(78 107 255 / var(--tw-border-opacity));
+  border-color: rgb(60 100 200 / var(--tw-border-opacity));
 }
 
 .rl\/40:hover {
-  border-color: rgb(78 107 255 / 0.4);
+  border-color: rgb(60 100 200 / 0.4);
 }
 
 .sl:hover {
@@ -2564,11 +2568,11 @@ h6 {
 
 .tl:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(78 107 255 / var(--tw-bg-opacity));
+  background: linear-gradient(135deg, #00C8F0, #1490DC, #3C64C8, #8C2CB4, #D42CA0);
 }
 
 .ul:hover {
-  fill: #4E6BFF;
+  fill: #3C64C8;
 }
 
 .vl:hover {
@@ -2581,7 +2585,7 @@ h6 {
 
 .xl:hover {
   --tw-text-opacity: 1;
-  color: rgb(78 107 255 / var(--tw-text-opacity));
+  color: rgb(60 100 200 / var(--tw-text-opacity));
 }
 
 .yl:hover {
