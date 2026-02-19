@@ -12,7 +12,7 @@
 
 <body x-data="{ page: 'home', 'darkMode': true, 'stickyMenu': false, 'navigationOpen': false, 'scrollTop': false }"
   x-init="
-         darkMode = JSON.parse(localStorage.getItem('darkMode'));
+         darkMode = JSON.parse(localStorage.getItem('darkMode')) ?? true;
          $watch('darkMode', value => localStorage.setItem('darkMode', JSON.stringify(value)))"
   :class="{'b eh': darkMode === true}">
   <!-- ===== Header Start ===== -->
@@ -885,7 +885,7 @@
             </div>
             <div class="fb">
               <h4 class="wj kk wm cc">Phone Number</h4>
-              <p><a href="#!">+009 8754 3433 223</a></p>
+              <p><a href="#!">+91 9110345033</a></p>
             </div>
             <div class="fb">
               <h4 class="wj kk wm cc">Skype Email</h4>

@@ -12,7 +12,7 @@
 
 <body x-data="{ page: '404', 'darkMode': true, 'stickyMenu': false, 'navigationOpen': false, 'scrollTop': false }"
   x-init="
-         darkMode = JSON.parse(localStorage.getItem('darkMode'));
+         darkMode = JSON.parse(localStorage.getItem('darkMode')) ?? true;
          $watch('darkMode', value => localStorage.setItem('darkMode', JSON.stringify(value)))"
   :class="{'b eh': darkMode === true}">
   <!-- ===== Header Start ===== -->
