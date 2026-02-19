@@ -46,26 +46,24 @@
         <nav>
           <ul class="tc _o sf yo cg ep">
             <li><a href="index.html" class="xl" :class="{ 'mk': page === 'home' }">Home</a></li>
-            <li><a href="index.html#features" class="xl">Features</a></li>
+            <li><a href="#services" class="xl">Services</a></li>
             <li class="c i" x-data="{ dropdown: false }">
               <a href="#!" class="xl tc wf yf bg" @click.prevent="dropdown = !dropdown"
-                :class="{ 'mk': page === 'blog-grid' || page === 'blog-single' || page === 'signin' || page === 'signup' || page === '404' }">
-                Pages
-
+                :class="{ 'mk': page === 'services' }">
+                All Services
                 <svg :class="{ 'wh': dropdown }" class="th mm we fd pf" xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512">
                   <path
                     d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
                 </svg>
               </a>
-
               <!-- Dropdown Start -->
               <ul class="a" :class="{ 'tc': dropdown }">
-                <li><a href="blog-grid.html" class="xl" :class="{ 'mk': page === 'blog-grid' }">Blog Grid</a></li>
-                <li><a href="blog-single.html" class="xl" :class="{ 'mk': page === 'blog-single' }">Blog Single</a></li>
-                <li><a href="signin.html" class="xl" :class="{ 'mk': page === 'signin' }">Sign In</a></li>
-                <li><a href="signup.html" class="xl" :class="{ 'mk': page === 'signup' }">Sign Up</a></li>
-                <li><a href="404.html" class="xl" :class="{ 'mk': page === '404' }">404</a></li>
+                <li><a href="mobile-app-development.html" class="xl">Mobile App Dev</a></li>
+                <li><a href="web-development.html" class="xl">Web Development</a></li>
+                <li><a href="custom-software.html" class="xl">Custom Software</a></li>
+                <li><a href="ui-ux-design.html" class="xl">UI/UX Design</a></li>
+                <li><a href="branding-identity.html" class="xl">Branding & Identity</a></li>
               </ul>
               <!-- Dropdown End -->
             </li>
@@ -89,10 +87,7 @@
             </label>
           </div>
 
-          <a href="signin.html" :class="{ 'nk yl' : page === 'home', 'ok' : page === 'home' && stickyMenu }"
-            class="ek pk xl">Sign In</a>
-          <a href="signup.html" :class="{ 'hh/[0.15]' : page === 'home', 'sh' : page === 'home' && stickyMenu }"
-            class="lk gh dk rg tc wf xf _l gi hi">Sign Up</a>
+          <!-- Sign In/Up Removed -->
         </div>
       </div>
     </div>
@@ -126,7 +121,7 @@
               <a href="#!" class="ek jk lk gh gi hi rg ml il vc _d _l">Get Started Now</a>
 
               <span class="tc sf">
-                <a href="#!" class="inline-block ek xj kk wm"> Call us (0123) 456 – 789 </a>
+                <a href="#!" class="inline-block ek xj kk wm"> Call us 9110345033 </a>
                 <span class="inline-block">For any question or concern</span>
               </span>
             </div>
@@ -137,39 +132,61 @@
     <!-- ===== Hero End ===== -->
 
     <!-- ===== Small Features Start ===== -->
-    <section id="features">
+    <section id="services">
       <div class="bb ze ki yn 2xl:ud-px-12.5">
         <div class="tc uf zo xf ap zf bp mq">
-          <!-- Small Features Item -->
+          <!-- Service Item 1 -->
           <div class="animate_top kn to/3 tc cg oq">
             <div class="tc wf xf cf ae cd rg mh">
               <img src="images/icon-01.svg" alt="Icon" />
             </div>
             <div>
-              <h4 class="ek yj go kk wm xb">24/7 Support</h4>
-              <p>Lorem ipsum dolor sit amet conse adipiscing elit.</p>
+              <h4 class="ek yj go kk wm xb">Mobile App Development</h4>
+              <p>Android, iOS, Cross-Platform, PWA</p>
             </div>
           </div>
 
-          <!-- Small Features Item -->
+          <!-- Service Item 2 -->
           <div class="animate_top kn to/3 tc cg oq">
             <div class="tc wf xf cf ae cd rg nh">
               <img src="images/icon-02.svg" alt="Icon" />
             </div>
             <div>
-              <h4 class="ek yj go kk wm xb">Take Ownership</h4>
-              <p>Lorem ipsum dolor sit amet conse adipiscing elit.</p>
+              <h4 class="ek yj go kk wm xb">Web Development</h4>
+              <p>Custom Websites, SaaS, E-commerce, CMS</p>
             </div>
           </div>
 
-          <!-- Small Features Item -->
+          <!-- Service Item 3 -->
           <div class="animate_top kn to/3 tc cg oq">
             <div class="tc wf xf cf ae cd rg oh">
               <img src="images/icon-03.svg" alt="Icon" />
             </div>
             <div>
-              <h4 class="ek yj go kk wm xb">Team Work</h4>
-              <p>Lorem ipsum dolor sit amet conse adipiscing elit.</p>
+              <h4 class="ek yj go kk wm xb">Custom Software</h4>
+              <p>ERP, CRM, Workflow Automation</p>
+            </div>
+          </div>
+
+          <!-- Service Item 4 -->
+          <div class="animate_top kn to/3 tc cg oq">
+            <div class="tc wf xf cf ae cd rg mh">
+              <img src="images/icon-04.svg" alt="Icon" />
+            </div>
+            <div>
+              <h4 class="ek yj go kk wm xb">UI/UX Design</h4>
+              <p>Research, Wireframing, UI Design, Prototyping</p>
+            </div>
+          </div>
+
+          <!-- Service Item 5 -->
+          <div class="animate_top kn to/3 tc cg oq">
+            <div class="tc wf xf cf ae cd rg nh">
+              <img src="images/icon-05.svg" alt="Icon" />
+            </div>
+            <div>
+              <h4 class="ek yj go kk wm xb">Branding & Identity</h4>
+              <p>Logo Design, Brand Guidelines, Product Design</p>
             </div>
           </div>
         </div>
@@ -1002,7 +1019,7 @@
 
                 <div class="vd to/2">
                   <label class="rc ac" for="email">Email address</label>
-                  <input type="email" name="email" id="email" placeholder="example@gmail.com"
+                  <input type="email" name="email" id="email" placeholder="Appstrass@gmail.com"
                     class="vd ph sg zk xm _g ch pm hm dm dn em pl/50 xi mi" />
                 </div>
               </div>
@@ -1010,7 +1027,7 @@
               <div class="tc sf yo ap zf ep qb">
                 <div class="vd to/2">
                   <label class="rc ac" for="phone">Phone number</label>
-                  <input type="text" name="phone" id="phone" placeholder="+009 3342 3432"
+                  <input type="text" name="phone" id="phone" placeholder="9110345033"
                     class="vd ph sg zk xm _g ch pm hm dm dn em pl/50 xi mi" />
                 </div>
 
@@ -1170,10 +1187,11 @@
               <h4 class="kk wm tj ec">Services</h4>
 
               <ul>
-                <li><a href="#!" class="sc xl vb">Web Development</a></li>
-                <li><a href="#!" class="sc xl vb">Graphics Design</a></li>
-                <li><a href="#!" class="sc xl vb">Digital Marketing</a></li>
-                <li><a href="#!" class="sc xl vb">Ui/Ux Design</a></li>
+                <li><a href="web-development.html" class="sc xl vb">Web Development</a></li>
+                <li><a href="mobile-app-development.html" class="sc xl vb">Mobile App Dev</a></li>
+                <li><a href="custom-software.html" class="sc xl vb">Custom Software</a></li>
+                <li><a href="ui-ux-design.html" class="sc xl vb">UI/UX Design</a></li>
+                <li><a href="branding-identity.html" class="sc xl vb">Branding & Identity</a></li>
               </ul>
             </div>
 

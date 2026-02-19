@@ -46,11 +46,10 @@
         <nav>
           <ul class="tc _o sf yo cg ep">
             <li><a href="index.html" class="xl" :class="{ 'mk': page === 'home' }">Home</a></li>
-            <li><a href="index.html#features" class="xl">Features</a></li>
+            <li><a href="index.html#services" class="xl">Services</a></li>
             <li class="c i" x-data="{ dropdown: false }">
-              <a href="#!" class="xl tc wf yf bg" @click.prevent="dropdown = !dropdown"
-                :class="{ 'mk': page === 'blog-grid' || page === 'blog-single' || page === 'signin' || page === 'signup' || page === '404' }">
-                Pages
+              <a href="#!" class="xl tc wf yf bg" @click.prevent="dropdown = !dropdown" :class="{ 'mk': page === '' }">
+                All Services
 
                 <svg :class="{ 'wh': dropdown }" class="th mm we fd pf" xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512">
@@ -61,11 +60,11 @@
 
               <!-- Dropdown Start -->
               <ul class="a" :class="{ 'tc': dropdown }">
-                <li><a href="blog-grid.html" class="xl" :class="{ 'mk': page === 'blog-grid' }">Blog Grid</a></li>
-                <li><a href="blog-single.html" class="xl" :class="{ 'mk': page === 'blog-single' }">Blog Single</a></li>
-                <li><a href="signin.html" class="xl" :class="{ 'mk': page === 'signin' }">Sign In</a></li>
-                <li><a href="signup.html" class="xl" :class="{ 'mk': page === 'signup' }">Sign Up</a></li>
-                <li><a href="404.html" class="xl" :class="{ 'mk': page === '404' }">404</a></li>
+                <li><a href="web-development.html" class="xl">Web Development</a></li>
+                <li><a href="mobile-app-development.html" class="xl">Mobile App Dev</a></li>
+                <li><a href="custom-software.html" class="xl">Custom Software</a></li>
+                <li><a href="ui-ux-design.html" class="xl">UI/UX Design</a></li>
+                <li><a href="branding-identity.html" class="xl">Branding & Identity</a></li>
               </ul>
               <!-- Dropdown End -->
             </li>
@@ -89,10 +88,7 @@
             </label>
           </div>
 
-          <a href="signin.html" :class="{ 'nk yl' : page === 'home', 'ok' : page === 'home' && stickyMenu }"
-            class="ek pk xl">Sign In</a>
-          <a href="signup.html" :class="{ 'hh/[0.15]' : page === 'home', 'sh' : page === 'home' && stickyMenu }"
-            class="lk gh dk rg tc wf xf _l gi hi">Sign Up</a>
+          <a href="index.html#contact" class="ek pk xl">Contact Us</a>
         </div>
       </div>
     </div>
@@ -457,10 +453,11 @@
               <h4 class="kk wm tj ec">Services</h4>
 
               <ul>
-                <li><a href="#!" class="sc xl vb">Web Development</a></li>
-                <li><a href="#!" class="sc xl vb">Graphics Design</a></li>
-                <li><a href="#!" class="sc xl vb">Digital Marketing</a></li>
-                <li><a href="#!" class="sc xl vb">Ui/Ux Design</a></li>
+                <li><a href="web-development.html" class="sc xl vb">Web Development</a></li>
+                <li><a href="mobile-app-development.html" class="sc xl vb">Mobile App Dev</a></li>
+                <li><a href="custom-software.html" class="sc xl vb">Custom Software</a></li>
+                <li><a href="ui-ux-design.html" class="sc xl vb">UI/UX Design</a></li>
+                <li><a href="branding-identity.html" class="sc xl vb">Branding & Identity</a></li>
               </ul>
             </div>
 
@@ -481,7 +478,7 @@
 
               <form action="https://formbold.com/s/unique_form_id" method="POST">
                 <div class="i">
-                  <input type="text" placeholder="Email address" class="vd sm _g ch pm vk xm rg gm dm dn gi mi" />
+                  <input type="text" placeholder="Appstrass@gmail.com" class="vd sm _g ch pm vk xm rg gm dm dn gi mi" />
 
                   <button class="h q fi">
                     <svg class="th vm ul" width="20" height="20" viewBox="0 0 20 20" fill="none"
