@@ -3398,12 +3398,28 @@ h6 {
   width: 90% !important;
   aspect-ratio: 1 / 1 !important;
   object-fit: cover;
-  border-radius: 50% !important;
-  -webkit-clip-path: circle(50% at 50% 50%);
-  clip-path: circle(50% at 50% 50%);
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40% !important;
   display: block !important;
   top: 5% !important;
   right: 5% !important;
+  box-shadow: 0 0 50px rgba(168, 85, 247, 0.4);
+  /* Subtle purple glow */
+  transition: border-radius 1s ease-in-out, transform 0.3s;
+}
+
+.hero-video:hover {
+  border-radius: 40% 60% 70% 30% / 30% 70% 40% 60% !important;
+  transform: scale(1.02);
+}
+
+/* Service Page Hero Image Styling */
+.hero-image-custom {
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% !important;
+  transition: border-radius 0.5s ease-in-out;
+}
+
+.hero-image-custom:hover {
+  border-radius: 50% 50% 50% 50% / 50% 50% 50% 50% !important;
 }
 
 @media (max-width: 768px) {
