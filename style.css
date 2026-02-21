@@ -2007,19 +2007,45 @@ h6 {
   background-color: rgb(0 114 172 / var(--tw-bg-opacity));
 }
 
+/* AppStra Brand Icon Colors */
 .mh {
-  --tw-bg-opacity: 1;
-  background-color: rgb(243 106 141 / var(--tw-bg-opacity));
+  background: linear-gradient(135deg, #8C2CB4, #D42CA0);
 }
 
 .nh {
-  --tw-bg-opacity: 1;
-  background-color: rgb(32 202 102 / var(--tw-bg-opacity));
+  background: linear-gradient(135deg, #00C8F0, #1490DC);
 }
 
 .oh {
-  --tw-bg-opacity: 1;
-  background-color: rgb(250 145 97 / var(--tw-bg-opacity));
+  background: linear-gradient(135deg, #3C64C8, #6B46F5);
+}
+
+/* Brand icon additional classes */
+.brand-icon-purple {
+  background: linear-gradient(135deg, #8C2CB4, #D42CA0);
+}
+
+.brand-icon-blue {
+  background: linear-gradient(135deg, #1490DC, #3C64C8);
+}
+
+.brand-icon-teal {
+  background: linear-gradient(135deg, #00C8F0, #1490DC);
+}
+
+.brand-icon-violet {
+  background: linear-gradient(135deg, #6B46F5, #8C2CB4);
+}
+
+.brand-icon-pink {
+  background: linear-gradient(135deg, #D42CA0, #8C2CB4);
+}
+
+/* Services section mobile fix */
+.services-mobile-scroll {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
 }
 
 .ph {
@@ -3428,5 +3454,86 @@ h6 {
     aspect-ratio: 1 / 1 !important;
     top: 5% !important;
     right: 5% !important;
+  }
+}
+
+/* ===== Service Icon Grid - Brand Styled ===== */
+.service-icon-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  padding: 1.5rem 0;
+}
+
+@media (min-width: 640px) {
+  .service-icon-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.75rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .service-icon-grid {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.875rem;
+  }
+}
+
+.service-icon-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.service-icon-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  min-width: 70px;
+  border-radius: 50%;
+  box-shadow: 0 4px 20px rgba(60, 100, 200, 0.35);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-icon-circle:hover {
+  transform: scale(1.1) translateY(-3px);
+  box-shadow: 0 8px 30px rgba(60, 100, 200, 0.55);
+}
+
+.service-icon-item h4 {
+  margin-top: 0.1rem;
+  font-size: 16px;
+  line-height: 1.3;
+}
+
+.service-icon-item p {
+  font-size: 0.8rem;
+  line-height: 1.4;
+  opacity: 0.75;
+  margin: 0;
+}
+
+@media (max-width: 639px) {
+  .service-icon-item {
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .service-icon-circle {
+    width: 56px;
+    height: 56px;
+    min-width: 56px;
+  }
+
+  .service-icon-item h4 {
+    font-size: 14px;
+  }
+
+  .service-icon-item p {
+    font-size: 0.75rem;
   }
 }
