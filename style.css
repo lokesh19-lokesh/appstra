@@ -3394,6 +3394,28 @@ h6 {
   transform: scale(1.1);
 }
 
+/* Call Float Button */
+.call-float {
+  position: fixed;
+  bottom: 160px;
+  right: 30px;
+  z-index: 9999;
+  background-color: #007bff;
+  color: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 3px #999;
+  transition: transform 0.3s;
+}
+
+.call-float:hover {
+  transform: scale(1.1);
+}
+
 .hero-video {
   width: 90% !important;
   aspect-ratio: 1 / 1 !important;
